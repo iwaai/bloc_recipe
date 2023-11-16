@@ -4,7 +4,7 @@ import '../../constants/theme/AppThemeCubit.dart';
 import './bloc/home_recipes_bloc.dart';
 import '../../widgets/LoadingWidget.dart';
 import '../../models/FoodType.dart';
-import '../../animations/animation.dart';
+
 import './widgets/FoodTypeWidget.dart';
 import './widgets/ListItem.dart';
 import '../../constants/Constants.dart';
@@ -131,12 +131,24 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
           const SizedBox(height: 10),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 26.0),
-            child: header("Popular Breakfast Recipes", "breakfast"),
+            child: header("Find Popular Breakfast Recipes", "breakfast"),
           ),
           const SizedBox(height: 10),
           FoodTypeWidget(
             items: widget.breakfast,
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 26.0),
+            child: header("Make Popular Drinks", "drinks"),
+          ),
+          const SizedBox(height: 10),
+          FoodTypeWidget(items: widget.drinks),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 26.0),
+            child: header("The Best pizza", "Pizza"),
+          ),
+          const SizedBox(height: 10),
+          FoodTypeWidget(items: widget.pizza),
           Padding(
             padding: const EdgeInsets.all(14.0),
             child: Column(
@@ -151,18 +163,6 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 26.0),
-            child: header("Popular Drinks", "drinks"),
-          ),
-          const SizedBox(height: 10),
-          FoodTypeWidget(items: widget.drinks),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 26.0),
-            child: header("pizza", "Pizza"),
-          ),
-          const SizedBox(height: 10),
-          FoodTypeWidget(items: widget.pizza),
         ],
       ),
     );
