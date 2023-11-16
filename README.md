@@ -1,16 +1,17 @@
 # recipe_app_bloc
 
-A new Flutter project.
+# Clone this repository
 
-## Getting Started
+$ git clone https://github.com/iwaai/bloc_recipe
 
-This project is a starting point for a Flutter application.
+# Go into the repository
 
-A few resources to get you started if this is your first Flutter project:
+$ cd recipe_app_bloc
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Install dependencies
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+$ flutter packages get
+
+# Run the app
+
+$ flutter run
