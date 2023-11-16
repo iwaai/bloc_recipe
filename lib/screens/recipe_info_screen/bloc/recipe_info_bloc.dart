@@ -2,7 +2,6 @@ import 'package:bloc/bloc.dart';
 import '../../../models/Failure.dart';
 import '../../../models/Recipe.dart';
 import '../../../models/SimilarList.dart';
-import '../../../models/Equipment.dart';
 import '../../../models/Nutrient.dart';
 import '../../../repo/Get_recipe_info.dart';
 part 'recipe_info_event.dart';
